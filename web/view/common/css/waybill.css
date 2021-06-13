@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@636&display=swap');
+/*font-family: 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@636&family=Nanum+Gothic:wght@400;700&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif;*/
+
+*{margin:0; padding:0; list-style:none; text-decoration: none; color:#000000;}
+
+#wayBillContainer{
+    width: 500px;
+    height: 600px;
+    border: 1px #000000 solid;
+    display: grid;
+    grid-template-rows: 116px 116px 264px 100px;
+    font-family:'Dosis', sans-serif;
+    letter-spacing: 2px;
+}
+#wayBillContainer>div{
+    font-family:'Nanum Gothic', sans-serif;
+    align-self: center;
+    justify-self: center;
+}
+
+#wayBillContainer .title{
+    font-size:30px;
+    font-family:'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    align-self: center;
+    justify-self: center;
+}
+#wayBillContainer .recentBill div{
+    display: inline-block;
+}
+#wayBillContainer .recentBill>div{
+    font-size: 23px;
+    font-weight: bolder;
+}
+#wayBillContainer .recentBill>input {
+    font-size: 20px;
+    border:none;
+}
+.recentBill .reviseWaybill>input{
+    font-size: 20px;
+}
+.recentBill .reviseWaybill .select{
+    margin-left: 55px;
+}
+
+.enrollWaybill .enroll>input{
+    font-size: 20px;
+}
+.enrollWaybill .select{
+    margin-left: 55px;
+}
+.select>select{
+    font-size: 20px;
+}
+
+.btn{
+    margin-left: -50px;
+}
+.btn>button{
+    font-size:20px;
+    margin-left: 50px;
+}

@@ -1,0 +1,96 @@
+section{
+    width:1100px;
+    margin:20px auto;
+    padding :20px;
+    overflow:hidden;
+    border:1px black solid;
+}
+/* 정렬, 검색 부분*/
+#rankSort{
+    margin-top: 100px;
+    border-bottom: 1px #1F695B solid;
+    border-top: 1px #1F695B solid;
+
+}
+#rankSort span{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#sortbutton{
+    display: inline-block;
+    margin-left: 100px;
+}
+#sortbutton .button{
+    margin-left: 80px;
+    padding: 10px 10px 10px 10px;
+    border: 1px #0A1329 solid;
+    cursor: pointer;
+}
+.button{
+    background-color: #FFFFFF;
+    /*box-shadow: 1px 1px 3px 1px #FBFAFA;*/
+    transition: all 0.1s;
+    padding: 3px 3px 3px 3px;
+
+}
+.button:hover{
+    transform : translateY(2px);
+    /*background-color: #F7ECE6;*/
+}
+
+#search{
+    display: inline-block;
+    margin-left: 200px;
+}
+#search .searchChef{
+    border: 1px black solid;
+    height: 25px;
+    width: 200px;
+}
+
+/* 콘텐츠 부분*/
+#content{
+    width: 500px;
+    margin-left: 131px;
+}
+.rankImg{
+    display: inline-flex;
+    margin-left: 50px;
+}
+
+.list{
+    display: inline-flex;
+    margin-left: 102px;
+    margin-top: 30px;
+}
+
+.chefInfo{
+    font-family: 'Dosis', sans-serif, 'Nanum Gothic', sans-serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.chefInfo span{
+    padding-right: 35px;
+    font-size: 20px;
+    font-weight:normal;
+}
+
+/*페이지바*/
+#pageBar{
+    width: 300px;
+    margin:30px auto;
+    height: 30px;
+}
+#pageBar *{
+    padding-right: 20px;
+    font-size: 23px;
+    font-family: 'Dosis', sans-serif, 'Nanum Gothic', sans-serif;
+}
+#pageBar span{
+    color: #1F695B;
+}
+#pageBar a:hover{
+    color: #1F695B;
+}

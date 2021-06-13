@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@636&display=swap');
+/*font-family: 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@636&family=Nanum+Gothic:wght@400;700&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif;*/
+
+*{margin:0; padding:0; list-style:none; text-decoration: none; color:#000000; font-family:'Nanum Gothic';}
+
+#totalContainer{
+	width:1500px;
+    display: grid;
+	grid-template-rows: minmax(200px,auto);
+	margin:0 auto;
+	position: relative;
+}
+#managerPage{
+	display: none;
+}
+#managerPage2{
+	display: none;
+}
+.header {
+	display: grid;
+	grid-template-columns: 300px 900px 300px;
+	border-bottom: 1.5px #1F695B solid;
+	align-items: center;
+}
+.header>div{
+	display: inline-block;
+}
+/* 헤더 메뉴부분 */
+.header .menu{
+	margin-left: 50px;
+	margin-top: 40px;
+}
+.header .menu>span a{
+	font-size:30px;
+	padding-left: 30px;
+}
+.header .menu>span a:hover {
+	color: #1F695B;
+}
+
+/* 헤더 메뉴 아이콘*/
+.header .controlIcon{
+	width:300px;
+	z-index:2;
+	margin-top:40px;
+}
+.header .controlIcon>span>a>img{
+	padding-left: 20px;
+}
+.header .controlIcon>span>a>img:hover{
+	color:#8CC7BC;
+}
+
+/* DropDown 메뉴 */
+#dropdown{
+	/* border:1px black solid; */
+	width:300px;
+	/* height:250px; */
+	margin-left:150px;
+	margin-top: 150px;
+	position: relative;
+}
+#dropdown ul{
+	list-style: none;
+}
+#dropdown_ul2{
+	z-index:999;
+	list-style: none;
+	position: absolute;
+}
+#dropdown_ul>li{
+	margin-right: 10px;
+	margin-top:-100px;
+}
+#dropdown_ul2 li{
+	background-color:white;
+	border:1px solid black;
+	width: 100px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+}
+#dropdown ul li a{
+	text-decoration: none;
+	color:black;
+	display: block;
+}
+#dropdown ul ul{
+	display: none;
+}
+#dropdown ul li:hover>ul{
+	display: block;
+}
+
+/* 로그인 팝업 */
+.popup{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.popup-content-container{
+	margin: 0 auto;
+	background: radial-gradient(circle at 0 100%, rgba(204, 0, 0, 0) 19px, white 20px),
+	radial-gradient(circle at 100% 100%, rgba(204, 0, 0, 0) 19px, white 20px),
+	radial-gradient(circle at 100% 0, rgba(204, 0, 0, 0) 19px, white 20px),
+	radial-gradient(circle at 0 0, rgba(204, 0, 0, 0) 19px, white 20px);
+	background-position: bottom left, bottom right, top right, top left;
+	background-size: 51% 50%;
+	background-repeat: no-repeat;
+	padding: 32px 0 20px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	width: 500px;
+}
+.loginfont{
+	font-size: 40px;
+	font-family:Dosis;
+	margin-left: 6%;
+}
+.loginform{
+	margin-left: 5%;
+}
+.loginbutton{
+	text-align:center;
+	margin-left: 10px;
+	width: 430px;
+	height: 50px;
+}
+.loginbutton button{
+	font-family: Dosis;
+	width: 100%;
+	height: 48px;
+	font-size: 25px;
+	border: 0;
+	outline: 0;
+	color: white;
+	background-color: #1F695B;
+}
+.input-container input{
+	width: 65%;
+	height : 50px;
+	border: 0px;
+	border-bottom: 2px solid black;
+}
+.input-container{
+	margin-top: 20px;
+	margin-right: 25px;
+	position: relative;
+	padding: 0 100px 0 15px;
+	border-bottom: 2px solid #1f695b;
+	box-sizing: border-box;
+
+}
+.hidden{
+	display: none;
+}
+.SearchIdPwSpan{
+	margin-top: 25px;
+	margin-right: 22px;
+	text-align: right;
+}
+.SearchIdPwSpan a{
+	font-size:20px;
+}
+.IdCheck{
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.kakaologinbtn{
+	display: inline-block;
+	margin-left: 25px;
+}
+.googlelogin{
+	display: inline-block;
+	padding-bottom:2px;
+}
+
+.kakaoface{
+	margin-top: 30px;
+}
+.join{
+	margin-left:25px;
+	margin-top: 25px;
+}
+.join a{
+	font-family: Dosis;
+	font-size:25px;
+	border: 1px #1F695B solid;
+	background-color: white;
+	color: #1F695B;
+	text-decoration: none;
+	display: inline-block;
+	width: 95%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.show-model{
+	padding-top: 150px;
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.close-button {
+	float: right;
+	margin-right: 5%;
+	width: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 0.25rem;
+	background-color: white;
+}
+.close-button:hover {
+	background-color: darkgray;
+}
+/* section 부*/
+.main-content {
+	display: grid;
+	grid-template-rows: repeat(4,minmax(300px,auto));
+	margin-top: 5px;
+	position:relative;
+}
+.main-content #banner{
+	position:relative;
+}
+
+/* 추천수 탑 3 레시피*/
+#recommend_recipe{
+	border-top: 1px #1f695b solid;
+	border-bottom: 1px #1f695b solid;
+	border-right: 1px #1f695b solid;;
+}
+
+.main-content #recommend_recipe{
+	margin-top:250px;
+	display: grid;
+	grid-template-columns: 500px 333px 333px 333px;
+	justify-items: center;
+}
+
+.main-content #banner>img{
+	z-index:100;
+}
+
+.main-content #recommend_recipe .recipe_icon{
+	display: inline-block;
+	width: 400px;
+	justify-self: left;
+
+}
+.main-content #recommend_recipe .recipeData{
+	display: inline-block;
+}
+
+.main-content #recommend_recipe .recipeData div{
+	display: inline-block;
+}
+.main-content #recommend_recipe .recipeData>a>img{
+	margin-top:45px;
+}
+.main-content #recommend_recipe .recipeData div span{
+	font-size:25px;
+}
+.main-content #recommend_recipe .recipeData .recipeTitle{
+	font-weight: bolder;
+	font-size:30px;
+}
+
+/* 셰프 탑 5 */
+.main-content #topChef{
+	margin-top:300px;
+	font-size: 25px;
+	display: grid;
+	grid-template-columns: repeat(5,minmax(280px,auto));
+	justify-items: center;
+	grid-template-rows: 50px 470px;
+}
+.main-content #topChef .chefData{
+	margin-top: 20px;
+	align-self: center;
+	justify-self: center;
+}
+
+.main-content #topChef .chefData .chefName{
+	font-weight: bolder;
+	font-size: 25px;
+}
+.main-content #topChef .chefData .chefNick{
+	font-size: 20px;
+}
+.main-content #topChef .chefData div{
+	margin-top: 20px;
+	width: 300px;
+}
+.main-content #topChef .chefData div>span>button{
+	margin-left: 85px;
+}
+.main-content #topChef>span{
+	grid-column:1/6;
+	grid-row:1/2;
+	justify-self: left;
+
+}
+
+
+/* 최신 레시피 3개*/
+.main-content #recipe{
+	margin-top:300px;
+	font-size: 20px;
+	display: grid;
+	justify-items: center;
+}
+.main-content #recipe .recipeData{
+	margin-top: 20px;
+}
+.main-content #recipe .recipeTitle{
+	font-size: 25px;
+	font-weight: bolder;
+}
+.main-content #recipe .recipeInfo{
+	font-size: 20px;
+}
+
+.main-content #recipe .recipeData div{
+	margin-top: 20px;
+	width: 250px;
+}
+.main-content #recipe>span{
+	grid-column:1/4;
+	grid-row:1/2;
+	justify-self: left;
+}
+
+
+	/* 푸터 */
+.footer {
+	margin-top:300px;
+	display: grid;
+	grid-template-columns: 200px 1100px 200px;
+	justify-items: center;
+}

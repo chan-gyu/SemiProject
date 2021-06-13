@@ -1,0 +1,9 @@
+web/WEB-INF/classes/
+resources/
+.DS_Store
+/.idea/
+/classes/artifacts/semip1_Web_exploded/
+/yorie.cg
+/web/upload/*
+/web/img/*
+/web/image/*

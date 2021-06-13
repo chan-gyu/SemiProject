@@ -1,0 +1,149 @@
+.hCommon{
+	display: inline-block;
+}
+.bodyall{
+	margin-top: 100px;
+    margin-left: 400px;
+    width: 800px;
+}
+.mainRogo{
+    margin-top: 10px;
+    margin-left: 42.5%;
+}
+.menu {
+    color: black;
+    margin-left: 300px;
+}
+.menu a {
+    color: black;
+}
+.joinPhrase p{
+    margin-left: 5%;
+}
+.infoinput{
+	margin-top: 50px;
+    margin-left: 5%;
+}
+.infoinput h4{
+    margin-left: -2.5%;
+}
+.tableStlye tr{
+    height: 45px;
+}
+.joinCheck{
+    margin-left: 5%;
+}
+.box {
+	display:block;
+	position: relative;
+	width: 350px;
+	height: 51px;
+	border: solid 1px #dadada;
+	padding: 10px 14px 10px 14px;
+	box-sizing: border-box;
+	background: #fff;
+}
+.int {
+	display: block;
+	position: relative;
+	width: 290px;
+	height: 29px;
+	border: none;
+	background: #fff;
+	font-size: 15px;
+}
+.div_input_id{
+	width: 350px;
+	height: 51px;
+	border: solid 1px #dadada;
+    
+}
+.div_input_email{
+	width: 350px;
+	height: 51px;
+	border: solid 1px #dadada;
+}
+.div_input_address{
+	width: 550px;
+	height: 51px;
+	border: solid 1px #dadada;
+}
+.int_id {
+	margin: 10px 10px 10px 10px;
+	width: 290px;
+	height: 29px;
+	border: none;
+	font-size: 15px;
+	position: absolute;
+}
+.nickname{
+	margin: 10px 10px 10px 10px;
+	width: 290px;
+	height: 29px;
+	border: none;
+	font-size: 15px;
+	position:absolute;
+}
+.email{
+	margin: 10px 10px 10px 10px;
+	width: 290px;
+	height: 29px;
+	border: none;
+	font-size: 15px;
+	position:absolute;
+}
+.address{
+	margin: 10px 10px 10px 10px;
+	width: 500px;
+	height: 29px;
+	border: none;
+	font-size: 15px;
+	position:absolute;
+}
+.div_input_id_button{
+	margin-left:360px;
+	width: 100px;
+	height: 52px;
+}
+.div_input_email_button{
+	margin-left:360px;
+	width: 100px;
+	height: 52px;
+}
+.div_input_addr_button{
+	margin-left:560px;
+	width: 100px;
+	height: 52px;
+}
+.box.int_pass {
+    padding-right: 40px;
+}
+
+.box.int_pass_check {
+    padding-right: 40px;
+}
+.pswdImg {
+	width: 18px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	margin-top: -10px;
+	cursor: pointer;
+}
+/* error */
+#alertTxt {
+	position: absolute;
+	top: 19px;
+	right: 38px;
+	font-size: 12px;
+	color: red;
+	display: none;
+}
+.error_next_box {
+    margin-top: 9px;
+    font-size: 12px;
+    color: red;    
+    display: none;
+}

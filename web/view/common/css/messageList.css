@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@636&display=swap');
+/*font-family: 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@636&family=Nanum+Gothic:wght@400;700&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif;*/
+*{
+    font-family: 'Dosis','Nanum Gothic', sans-serif;
+    text-decoration: none;
+    color:#000000;
+}
+#titleCon{
+    width: 500px;
+    height: 60px;
+    border-top: 1px #000000 solid;
+    border-left: 1px #000000 solid;
+    border-right: 1px #000000 solid;
+
+}
+#titleCon>div{
+    margin: 5px 5px 5px 5px;
+    height: 48px;
+    border: 1px #000000 solid;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#titleCon>div>span{
+    justify-self: center;
+    align-self: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+#container{
+    display: grid;
+    width: 500px;
+    height: 660px;
+    border: 1px #000000 solid;
+    overflow: scroll;
+    grid-template-rows: repeat(6,1fr);
+}
+
+#container .userInfo{
+    margin: 5px 5px 5px 5px;
+    height: 120px;
+    border: 1px #000000 solid;
+    display: grid;
+    grid-template-columns: 120px 346px;
+}
+#container .userInfo>div>a img{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#container .userInfo .targetInfo{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#container .userInfo .targetInfo .targetIntro{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+#nonContainer{
+    grid-column: 1/2;
+    grid-row:1/7;
+
+}
+#nonContainer .nonMessage{
+
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 488px;
+    height: 648px;
+    border: 1px #000000 solid;
+}
+#nonContainer .nonMessage div{
+    text-align: center;
+    width: 280px;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-weight: bolder;
+    font-size:35px;
+    letter-spacing: 5px;
+}

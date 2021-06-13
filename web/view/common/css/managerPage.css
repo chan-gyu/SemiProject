@@ -1,0 +1,242 @@
+#managerContainer{
+    display: grid;
+    width: 1200px;
+    grid-template-rows: 100px 400px 1000px 100px;
+    border: 1px #000000 solid;
+    margin: 150px auto;
+    font-family: 'Dosis','Nanum Gothic', sans-serif;
+}
+#managerContainer>div{
+    width: 1188px;
+    border: 1px #000000 solid;
+    margin-top:5px;
+    margin-left:5px;
+}
+/* 타이틀 */
+#managerContainer .managerTitle>div{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top:10px;
+    margin-left: 425px;
+    letter-spacing: 4px;
+}
+
+/* 기본 조회화면 위해서 */
+.largeSort>div>a{
+    cursor: pointer;
+}
+/* 정렬 기준 */
+/* 주문 현황별 조회*/
+#managerContainer .controlPanel{
+    display: grid;
+    grid-template-rows: 40px 308px 50px;
+}
+#managerContainer .controlPanel .largeSort{
+    border: 1px #000000 solid;
+}
+#managerContainer .controlPanel .largeSort>div{
+    margin-left: 50px;
+    margin-top: 5px;
+    font-size: 21px;
+    display: inline-block;
+}
+#managerContainer .controlPanel .largeSort>div>a:hover{
+    color:#8CC7BC;
+}
+
+/* 배송 현황별 조회   sortRef2 */
+#managerContainer .controlPanel .sortRef2{
+    border: 1px #000000 solid;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: 100px 1080px;
+}
+#managerContainer .controlPanel .sortRef2>div{
+    margin-top: 8px;
+    margin-left: 30px;
+}
+#managerContainer .controlPanel .sortRef2>div:nth-child(2n+1){
+    width:68px;
+    border-top: 1px #000000 solid;
+    border-bottom: 1px #000000 solid;
+}
+#managerContainer .controlPanel .sortRef2>div:nth-child(2n+1)>div{
+    margin-top: 12px;
+}
+#managerContainer .controlPanel .sortRef2>div:nth-child(2n){
+    border-top: 1px #000000 solid;
+    border-bottom: 1px #000000 solid;
+    border-left: 1px #000000 solid;
+    margin-left: 0;
+}
+#managerContainer .controlPanel .sortRef2 .paymentMethod{
+    font-size: 20px;
+}
+#managerContainer .controlPanel .sortRef2 .paymentMethod>div {
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 7px;
+}
+#managerContainer .controlPanel .sortRef2 .orderStateSelect{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    font-size: 20px;
+}
+#managerContainer .controlPanel .sortRef2 .request>div{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+#managerContainer .controlPanel .sortRef2 .searchDate>div{
+    margin-top: 12px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#managerContainer .controlPanel .sortRef2 .sortMethod>div{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+#managerContainer .controlPanel .sortRef2 .deliveryState>div{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+/* 배송 현황별 조회 끝  */
+
+
+/* 개별 조회  sortRef3*/
+#managerContainer .controlPanel .sortRef3{
+    border: 1px #000000 solid;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: 100px 1080px;
+}
+#managerContainer .controlPanel .sortRef3>div{
+    margin-top: 8px;
+    margin-left: 30px;
+}
+#managerContainer .controlPanel .sortRef3>div:nth-child(2n+1){
+    width:68px;
+    border-top: 1px #000000 solid;
+    border-bottom: 1px #000000 solid;
+}
+#managerContainer .controlPanel .sortRef3>div:nth-child(2n+1)>div{
+    margin-top: 12px;
+}
+#managerContainer .controlPanel .sortRef3>div:nth-child(2n){
+    border-top: 1px #000000 solid;
+    border-bottom: 1px #000000 solid;
+    border-left: 1px #000000 solid;
+    margin-left: 0;
+}
+#managerContainer .controlPanel .sortRef3 .paymentMethod{
+    font-size: 20px;
+}
+#managerContainer .controlPanel .sortRef3 .paymentMethod>div {
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 7px;
+}
+#managerContainer .controlPanel .sortRef3 .orderStateSelect{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+    font-size: 20px;
+}
+#managerContainer .controlPanel .sortRef3 .request>div{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+#managerContainer .controlPanel .sortRef3 .searchDate>div{
+    margin-top: 12px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#managerContainer .controlPanel .sortRef3 .sortMethod>div{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+#managerContainer .controlPanel .sortRef3 .searchCondition>div{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+/*    */
+#managerContainer .controlPanel .searchBtn>div{
+    margin-top:7px;
+    margin-left: 530px;
+}
+#managerContainer .controlPanel .searchBtn>div>input{
+    font-size: 20px;
+    padding: 2px 13px;
+}
+
+/* 내용 */
+#managerContainer .managerContent{
+    display: grid;
+    grid-template-rows: repeat(11,minmax(40px,auto));
+    /**/
+}
+#managerContainer .managerContent #sortNavi{
+    display: grid;
+    grid-template-columns: 170px 460px 330px 150px 78px;
+    align-items: center;
+    border-bottom: 1px #000000 solid;
+}
+#managerContainer .managerContent #sortNavi .selectDelivery{
+    margin-top: 50px;
+    margin-left:180px;
+}
+#managerContainer .managerContent #sortNavi .selectDelivery>select{
+    width: 140px;
+}
+#managerContainer .managerContent #sortNavi .selectN{
+    margin-top: 50px;
+}
+#managerContainer .managerContent #sortNavi .selectN>select{
+    width:130px
+}
+#managerContainer .managerContent #sortNavi .changeBtn{
+    margin-top: 50px;
+    margin-right: 10px;
+}
+#managerContainer .managerContent .rowTitle{
+    display: grid;
+    grid-template-columns: 120px 120px 180px 120px 140px 120px 120px 120px 148px;
+    border-bottom: 1px #000000 solid;
+    align-items: center;
+}
+#managerContainer .managerContent .rowTitle>div{
+    margin-top: 5px;
+}
+#managerContainer .managerContent .data{
+    display: grid;
+    height: 80px;
+    grid-template-columns: 120px 120px 180px 120px 140px 120px 120px 120px 148px;
+    border-bottom: 1px #000000 solid;
+    align-items: center;
+}
+
+    /* 하단 페이지바 */
+#managerContainer .pageBar{
+    font-size: 25px;
+}
+#managerContainer .pageBar>div{
+    margin-top: 30px;
+    margin-left: 480px;
+}
+#managerContainer .pageBar>div>span{
+    padding-left: 10px;
+}

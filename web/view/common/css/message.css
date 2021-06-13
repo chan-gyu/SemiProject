@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@636&display=swap');
+/*font-family: 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@636&family=Nanum+Gothic:wght@400;700&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif;*/
+*{
+    font-family: 'Dosis', 'Nanum Gothic', sans-serif;
+}
+#messageContainer{
+    display: grid;
+    grid-template-rows: 100px 500px 50px;
+    width:500px;
+    border: 1px #000000 solid;
+}
+#messageTop{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 445px 55px;
+    grid-template-rows: 60px 40px ;
+    border-bottom: 1px #000000 solid;
+}
+#messageTop>div>a>img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+#messageTop .messageProfile{
+    justify-self: center;
+}
+#messageTop .messageBtn{
+    justify-self: center;
+}
+#messageTop .messageBtn button{
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 45px;
+}
+#messageTop .messageId{
+    margin-top: 5px;
+    justify-self: center;
+}
+
+#messageContent .content{
+    margin:5px 5px 5px 5px;
+    height: 490px;
+    border: 1px #000000 solid;
+    display: grid;
+    grid-template-columns: 490px;
+    overflow: scroll;
+    grid-template-rows: repeat(8,1fr);
+}
+#messageContent .me{
+    margin-top: 15px;
+    margin-right: 15px;
+    height: 40px;
+    width:auto;
+    justify-self: right;
+    background-color: #3575E5;
+    border: 1px #3575E5 solid;
+    color: #eaf0f8 ;
+    border-radius: 5px;
+}
+#messageContent .me>span{
+    height: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-left: 2px;
+}
+#messageContent .you{
+    margin-top: 15px;
+    margin-left: 15px;
+    width:auto;
+    height: 40px;
+    justify-self: left;
+    background-color: #555555;
+    border: 1px #555555 solid;
+    color: #eaf0f8;
+    border-radius: 5px;
+}
+#messageContent .you>span{
+    height: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-left: 2px;
+}
+
+#messageInput>div{
+    margin:5px 5px 5px 5px;
+    border: 1px #000000 solid;
+    height: 38px;
+}
+#messageInput>div>input{
+    margin-left: 2px;
+    margin-top: 4px;
+    height: 30px;
+    width: 430px;
+}
+#messageInput>div>button{
+    height: 28px;
+}
